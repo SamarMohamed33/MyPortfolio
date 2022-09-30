@@ -1,0 +1,298 @@
+/********************************* Global *******************************************/
+body {
+  font-family: "Roboto Slab", serif;
+  background-color: #fdfdfd;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+.contact-me,
+footer {
+  background-color: #2a2e37;
+  color: white;
+  padding-bottom: 50px;
+}
+
+/********************************* header *******************************************/
+
+header {
+  height: 450px;
+  font-size: 20px;
+}
+header a {
+  color: #2a2e37;
+  text-decoration: none;
+  transition: 0.2s ease;
+  display: block; /*Transform does not work on inline elements*/
+}
+header a:hover {
+  text-decoration: underline;
+  transform: scale(1.2);
+}
+header img {
+  position: relative;
+  right: 70px;
+  top: 40px;
+  height: 80%;
+}
+.left,
+.right {
+  position: absolute;
+  height: inherit;
+  z-index: -1;
+}
+.left {
+  background-color: #eee8e7; /* first one */
+  background-color: #feefef; /*  light pink almost 11*/
+  background-color: #eee5e5;
+  background-color: #eaeaf0;
+  background-color: #ded3e5;
+  background-color: #e5dcea;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.right {
+  background-color: #31353e;
+  background-color: #23272e;
+  background-color: #31353f; /* first one */
+  background-color: #2a2e37;
+  width: 30%;
+  right: 0;
+  top: 0;
+}
+header div:last-of-type,
+nav {
+  width: 80%;
+  margin: auto;
+}
+nav {
+  padding: 20px;
+  font-size: 20px;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  display: inline-block;
+  padding: 15px;
+  margin: auto 10px;
+  cursor: pointer;
+}
+header h1 {
+  font-family: "Courgette", cursive;
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+header h2 {
+  margin-bottom: 5px;
+}
+header p {
+  margin-top: 0;
+}
+
+/********************************** about me *****************************************/
+.about-me {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+.about-me h2 {
+  text-align: center;
+  margin: 50px;
+  font-size: 30px;
+}
+.about-me img {
+  width: 400px;
+  float: left;
+}
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 70%;
+  margin: auto;
+  font-size: 20px;
+}
+pre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+}
+progress {
+  display: block;
+  height: 12px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+/* For Chrome or Safari */
+progress::-webkit-progress-bar {
+  background-color: #eeeeee;
+}
+
+progress::-webkit-progress-value {
+  background-color: #2a2e37 !important;
+}
+
+/********************************************************** portfolii ****************************************/
+.portfolio {
+  background-color: #f2e8cf;
+  background-color: #eee8e7;
+  background-color: #e5dcea;
+  background-color: #e5dcea;
+  padding: 50px 0 100px;
+}
+.portfolio h2 {
+  text-align: center;
+  margin: 20px;
+}
+.portfolio h3 {
+  margin-bottom: 0;
+  font-size: 35px;
+}
+.portfolio img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.projects-wrap {
+  width: 95%;
+  margin: 30px auto;
+}
+.project {
+  margin: 50px;
+  height: 70vh;
+}
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  height: 400px;
+  padding: 20px;
+  width: 55%;
+  display: inline-block;
+}
+.card div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #2a2e37;
+  background-color: #dccfe4;
+  background-color: #f5f2f7;
+  box-shadow: 0 0 20px #23272e;
+  border-radius: 15px;
+  backface-visibility: hidden;
+}
+.card div:first-child {
+  left: 0;
+  padding: 10px;
+}
+.card div:last-child {
+  background-color: black;
+  right: 0;
+  transform: rotateY(180deg);
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+video {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.description {
+  width: 35%;
+  float: right;
+  clear: both;
+  margin: auto;
+}
+.description a {
+  display: inline-block;
+  background-color: #23272e;
+  color: white;
+  padding: 20px 10px;
+  border: none;
+  width: 170px;
+  letter-spacing: 2px;
+  margin: 50px 10px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+.description a:hover {
+  background-color: rgba(35, 39, 46, 50%);
+  color: black;
+}
+.description p {
+  line-height: 1.6;
+  font-size: 20px;
+}
+
+/********************************************************** Edudcation ****************************************/
+
+.education {
+  background-image: url(images/hand-2586144_1920.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+.education h3,
+.education h2 {
+  font-family: "Courgette", cursive;
+  margin-top: 0;
+}
+.education h2 {
+  font-size: 50px;
+}
+.education-wrap {
+  max-width: 800px;
+  width: 80%;
+  margin: auto;
+  padding: 60px 0;
+}
+
+/********************************************************** Contact me ****************************************/
+
+.contact-me {
+  font-family: "Courgette", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-me h2 {
+  font-size: 50px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+form input,
+form textarea {
+  margin: 10px;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 20px;
+}
+form input {
+  height: 30px;
+  outline: none;
+  border: none;
+}
+form input:last-child {
+  height: 40px;
+}
+form input:last-child:hover {
+  background-color: rgba(35, 39, 46, 50%);
+}
+
+footer {
+  text-align: center;
+}
