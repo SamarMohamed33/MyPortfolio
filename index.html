@@ -218,23 +218,24 @@
     </section>
     <section class="contact-me" id="contact-me">
       <h2>Contact Me</h2>
-      <form
-        action="https://formsubmit.co/samarmohamed.sm736@gmail.com"
-        method="POST"
-      >
-        <input type="text" name="_honey" style="display: none" />
-        <input type="hidden" name="_captcha" value="false" />
-        <input
+      <form action="hello.php" method="POST">
+        <!--input
           type="hidden"
           name="_next"
           value="https://samarmohamed33.github.io/MyPortfolio/ThankPage.html"
+        /-->
+        <input type="text" placeholder="Enter Your Name" name="Name" required />
+        <input
+          type="email"
+          placeholder="Enter Your Email"
+          name="Email"
+          required
         />
-        <input type="text" placeholder="Enter Your Name" name="name" />
-        <input type="email" placeholder="Enter Your Email" name="email" />
-        <textarea rows="5" placeholder="Message" name="Message"> </textarea>
-        <input type="submit" name="btn" />
+        <textarea rows="5" placeholder="Message" name="Message" required>
+        </textarea>
+        <input type="submit" />
       </form>
-      
+
       <a href="https://www.linkedin.com/in/samar-mohamed-1b6809203">linkedin</a>
       <a href="mailto:samarmohamed.sm736@gmail.com"
         >samarmohamed.sm736@gmail.com</a
